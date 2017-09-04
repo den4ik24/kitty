@@ -44,9 +44,9 @@ namespace kitty
 
             calculateButton.Click += CalculateButton_Click;
 
-            madamAgeSeekBar.ProgressChanged += madamAgeSeekBar_ProgressChanged;
+            madamAgeSeekBar.ProgressChanged += MadamAgeSeekBar_ProgressChanged;
 
-            spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
+            spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(Spinner_ItemSelected);
             var adapter = ArrayAdapter.CreateFromResource(
                     this, Resource.Array.color_hair, Android.Resource.Layout.SimpleSpinnerItem);
 
@@ -60,9 +60,9 @@ namespace kitty
 
             calculateButton.Click -= CalculateButton_Click;
 
-            madamAgeSeekBar.ProgressChanged -= madamAgeSeekBar_ProgressChanged;
+            madamAgeSeekBar.ProgressChanged -= MadamAgeSeekBar_ProgressChanged;
 
-            spinner.ItemSelected -= new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
+            spinner.ItemSelected -= new EventHandler<AdapterView.ItemSelectedEventArgs>(Spinner_ItemSelected);
             var adapter = ArrayAdapter.CreateFromResource(
                     this, Resource.Array.color_hair, Android.Resource.Layout.SimpleSpinnerItem);
 
@@ -91,12 +91,12 @@ namespace kitty
                         
         }
 
-        private void madamAgeSeekBar_ProgressChanged(object sender, EventArgs e)
+        private void MadamAgeSeekBar_ProgressChanged(object sender, EventArgs e)
         {
             madamAge.Text = string.Format("{0}", madamAgeSeekBar.Progress);
         }
 
-        private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        private void Spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             Spinner spinner = (Spinner)sender;
 

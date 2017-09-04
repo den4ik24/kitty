@@ -35,7 +35,6 @@ C:\Users\20dia\OneDrive\Документы\Visual Studio 2017\Projects\kitty-mas
 C:\Users\20dia\OneDrive\Документы\Visual Studio 2017\Projects\kitty-master\bin\Debug\kitty.pdb
 C:\Users\20dia\OneDrive\Документы\Visual Studio 2017\Projects\kitty-master\bin\Debug\kitty.kitty.apk
 C:\Users\20dia\OneDrive\Документы\Visual Studio 2017\Projects\kitty-master\bin\Debug\kitty.kitty-Signed.apk
-C:\Users\20dia\OneDrive\Документы\Visual Studio 2017\Projects\kitty-master\obj\Debug\kitty.csprojResolveAssemblyReference.cache
 C:\Users\20dia\OneDrive\Документы\Visual Studio 2017\Projects\kitty-master\obj\Debug\kitty.csproj.CoreCompileInputs.cache
 C:\Users\20dia\OneDrive\Документы\Visual Studio 2017\Projects\kitty-master\obj\Debug\kitty.dll
 C:\Users\20dia\OneDrive\Документы\Visual Studio 2017\Projects\kitty-master\obj\Debug\kitty.pdb
