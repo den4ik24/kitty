@@ -28,12 +28,12 @@
             android:textSize="25sp"
             android:textColor="@android:color/background_dark"
             android:layout_width="191.0dp"
-            android:layout_height="34.5dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="0.0dp"
             android:layout_marginTop="0.0dp" />
         <TextView
             android:layout_width="187.5dp"
-            android:layout_height="48.0dp"
+            android:layout_height="wrap_content"
             android:id="@+id/madamAge"
             android:textColor="@android:color/holo_green_dark"
             android:gravity="left"
@@ -43,7 +43,7 @@
     </TableRow>
     <SeekBar
         android:layout_width="match_parent"
-        android:layout_height="38.0dp"
+        android:layout_height="wrap_content"
         android:id="@+id/madamAgeSeekBar"
         android:max="150"
         android:progress="35" />
@@ -57,14 +57,14 @@
             android:text="Замужем ?"
             android:id="@+id/married"
             android:textColor="@android:color/holo_red_light"
-            android:layout_height="50.0dp"
+            android:layout_height="match_parent"
             android:layout_width="167.5dp"
             android:textSize="25sp"
             android:layout_marginRight="50.5dp" />
         <TextView
             android:text="цвет волос"
             android:layout_width="182.5dp"
-            android:layout_height="50.0dp"
+            android:layout_height="match_parent"
             android:layout_gravity="right"
             android:textColor="@android:color/background_dark"
             android:textSize="25sp"
@@ -74,7 +74,7 @@
             android:layout_marginRight="0.0dp" />
         <Spinner
             android:layout_width="192.0dp"
-            android:layout_height="49.5dp"
+            android:layout_height="match_parent"
             android:id="@+id/spinner"
             android:layout_marginBottom="1.0dp"
             android:layout_gravity="right"
@@ -99,13 +99,13 @@
             android:text="рекомендуемое количество пушистиков :"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/textView2"
-            android:layout_width="383.5dp"
+            android:layout_width="match_parent"
             android:gravity="center"
-            android:layout_height="30.0dp"
+            android:layout_height="match_parent"
             android:textColor="@android:color/black" />
     </TableRow>
     <TextView
-        android:layout_width="191.0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/numberCats"
         android:enabled="false"
@@ -118,10 +118,11 @@
         android:textColor="@android:color/holo_red_dark" />
     <ImageView
         android:src="@drawable/sample2"
-        android:layout_width="591.0dp"
-        android:layout_height="549.0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:id="@+id/imageCat"
         android:layout_marginBottom="0.0dp"
         android:layout_marginTop="0.0dp"
-        android:scaleType="centerInside" />
+        android:scaleType="centerInside"
+        android:layout_marginRight="9.0dp" />
 </LinearLayout>
