@@ -1,11 +1,7 @@
 ﻿using System;
 using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 using Android.OS;
-using System.Collections.Generic;
 
 
 namespace kitty
@@ -25,7 +21,6 @@ namespace kitty
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
             madamAge = FindViewById<TextView>(Resource.Id.madamAge);
@@ -100,9 +95,9 @@ namespace kitty
         {
             Spinner spinner = (Spinner)sender;
 
-          
             string toast = string.Format("Цвет волос {0}", spinner.GetItemAtPosition(e.Position));
             Toast.MakeText(this, toast, ToastLength.Short).Show();
+
         }
 
     }

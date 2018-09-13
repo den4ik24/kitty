@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="kitty.kitty" android:versionCode="1" android:versionName="1.0" android:installLocation="preferExternal">
-	<uses-sdk android:minSdkVersion="21" />
+	<activity android:name=".kitty" android:configChanges="orientation|screenSize"></activity>
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
+	<uses-sdk android:targetSdkVersion="22" />
 	<application android:label="kitty"></application>
 </manifest>

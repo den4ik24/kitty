@@ -1,4 +1,3 @@
-kitty.MainActivity, kitty;md5fece6daa2ee3d7e461d63c1bbecfed0f.MainActivity
-kitty.MainActivity, kitty, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5fece6daa2ee3d7e461d63c1bbecfed0f.MainActivity
-kitty.MainActivity;md5fece6daa2ee3d7e461d63c1bbecfed0f.MainActivity
-kitty.MainActivity;md5fece6daa2ee3d7e461d63c1bbecfed0f.MainActivity
+kitty.MainActivity, kitty;md576abc7c04a0bc258ba3b39bfd03342af.MainActivity
+kitty.MainActivity;md576abc7c04a0bc258ba3b39bfd03342af.MainActivity
+kitty.MainActivity;md576abc7c04a0bc258ba3b39bfd03342af.MainActivity

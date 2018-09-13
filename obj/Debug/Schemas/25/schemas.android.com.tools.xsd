@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>18.10.2017 17:50:47</xs:documentation>
+    <xs:documentation>05.04.2018 12:25:08</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -37,17 +37,6 @@
             <xs:enumeration value="@android:layout/simple_spinner_item" />
             <xs:enumeration value="@android:layout/test_list_item" />
             <xs:enumeration value="@android:layout/two_line_list_item" />
-            <xs:enumeration value="?android:attr/dialogCustomTitleDecorLayout" />
-            <xs:enumeration value="?android:attr/dialogTitleDecorLayout" />
-            <xs:enumeration value="?android:attr/dialogTitleIconsDecorLayout" />
-            <xs:enumeration value="?android:attr/preferenceLayoutChild" />
-            <xs:enumeration value="?android:attr/textEditNoPasteWindowLayout" />
-            <xs:enumeration value="?android:attr/textEditPasteWindowLayout" />
-            <xs:enumeration value="?android:attr/textEditSideNoPasteWindowLayout" />
-            <xs:enumeration value="?android:attr/textEditSidePasteWindowLayout" />
-            <xs:enumeration value="?android:attr/textEditSuggestionContainerLayout" />
-            <xs:enumeration value="?android:attr/textEditSuggestionItemLayout" />
-            <xs:enumeration value="?android:attr/windowActionBarFullscreenDecorLayout" />
           </xs:restriction>
         </xs:simpleType>
       </xs:union>
@@ -86,17 +75,6 @@
             <xs:enumeration value="@android:layout/simple_spinner_item" />
             <xs:enumeration value="@android:layout/test_list_item" />
             <xs:enumeration value="@android:layout/two_line_list_item" />
-            <xs:enumeration value="?android:attr/dialogCustomTitleDecorLayout" />
-            <xs:enumeration value="?android:attr/dialogTitleDecorLayout" />
-            <xs:enumeration value="?android:attr/dialogTitleIconsDecorLayout" />
-            <xs:enumeration value="?android:attr/preferenceLayoutChild" />
-            <xs:enumeration value="?android:attr/textEditNoPasteWindowLayout" />
-            <xs:enumeration value="?android:attr/textEditPasteWindowLayout" />
-            <xs:enumeration value="?android:attr/textEditSideNoPasteWindowLayout" />
-            <xs:enumeration value="?android:attr/textEditSidePasteWindowLayout" />
-            <xs:enumeration value="?android:attr/textEditSuggestionContainerLayout" />
-            <xs:enumeration value="?android:attr/textEditSuggestionItemLayout" />
-            <xs:enumeration value="?android:attr/windowActionBarFullscreenDecorLayout" />
           </xs:restriction>
         </xs:simpleType>
       </xs:union>
@@ -135,17 +113,6 @@
             <xs:enumeration value="@android:layout/simple_spinner_item" />
             <xs:enumeration value="@android:layout/test_list_item" />
             <xs:enumeration value="@android:layout/two_line_list_item" />
-            <xs:enumeration value="?android:attr/dialogCustomTitleDecorLayout" />
-            <xs:enumeration value="?android:attr/dialogTitleDecorLayout" />
-            <xs:enumeration value="?android:attr/dialogTitleIconsDecorLayout" />
-            <xs:enumeration value="?android:attr/preferenceLayoutChild" />
-            <xs:enumeration value="?android:attr/textEditNoPasteWindowLayout" />
-            <xs:enumeration value="?android:attr/textEditPasteWindowLayout" />
-            <xs:enumeration value="?android:attr/textEditSideNoPasteWindowLayout" />
-            <xs:enumeration value="?android:attr/textEditSidePasteWindowLayout" />
-            <xs:enumeration value="?android:attr/textEditSuggestionContainerLayout" />
-            <xs:enumeration value="?android:attr/textEditSuggestionItemLayout" />
-            <xs:enumeration value="?android:attr/windowActionBarFullscreenDecorLayout" />
           </xs:restriction>
         </xs:simpleType>
       </xs:union>
@@ -184,17 +151,6 @@
             <xs:enumeration value="@android:layout/simple_spinner_item" />
             <xs:enumeration value="@android:layout/test_list_item" />
             <xs:enumeration value="@android:layout/two_line_list_item" />
-            <xs:enumeration value="?android:attr/dialogCustomTitleDecorLayout" />
-            <xs:enumeration value="?android:attr/dialogTitleDecorLayout" />
-            <xs:enumeration value="?android:attr/dialogTitleIconsDecorLayout" />
-            <xs:enumeration value="?android:attr/preferenceLayoutChild" />
-            <xs:enumeration value="?android:attr/textEditNoPasteWindowLayout" />
-            <xs:enumeration value="?android:attr/textEditPasteWindowLayout" />
-            <xs:enumeration value="?android:attr/textEditSideNoPasteWindowLayout" />
-            <xs:enumeration value="?android:attr/textEditSidePasteWindowLayout" />
-            <xs:enumeration value="?android:attr/textEditSuggestionContainerLayout" />
-            <xs:enumeration value="?android:attr/textEditSuggestionItemLayout" />
-            <xs:enumeration value="?android:attr/windowActionBarFullscreenDecorLayout" />
           </xs:restriction>
         </xs:simpleType>
       </xs:union>
@@ -202,14 +158,13 @@
   </xs:attribute>
   <xs:attribute name="text">
     <xs:annotation>
-      <xs:documentation>Text to display.</xs:documentation>
+      <xs:documentation></xs:documentation>
     </xs:annotation>
     <xs:simpleType>
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -243,7 +198,7 @@
   </xs:attribute>
   <xs:attribute name="visibility">
     <xs:annotation>
-      <xs:documentation>Controls the initial visibility of the view.</xs:documentation>
+      <xs:documentation></xs:documentation>
     </xs:annotation>
     <xs:simpleType>
       <xs:union memberTypes="xs:string">
