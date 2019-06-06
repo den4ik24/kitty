@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:id="@+id/tableRow1">
         <TextView
-            android:text="Ваш возраст  :     "
+            android:text="Ваш возраст  :       "
             android:id="@+id/textView1"
             android:gravity="left"
             android:textSize="25sp"
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:id="@+id/madamAge"
-            android:textColor="@android:color/holo_green_dark"
+            android:textColor="@android:color/holo_blue_dark"
             android:gravity="left"
             android:textSize="30sp"
             android:text="35"
@@ -80,6 +80,7 @@
             android:layout_width="0dp"
             android:layout_weight="10"
             android:id="@+id/spinner"
+            android:entries ="@array/color_hair"
             android:layout_marginBottom="0.0dp"
             android:layout_gravity="left"
             android:spinnerMode="dropdown"

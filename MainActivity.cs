@@ -30,12 +30,7 @@ namespace kitty
             married = FindViewById<CheckBox>(Resource.Id.married);
             spinner = FindViewById<Spinner>(Resource.Id.spinner);
             imageCat = FindViewById<ImageView>(Resource.Id.imageCat);
-            
-        }
 
-        protected override void OnStart()
-        {
-            base.OnStart();
 
             calculateButton.Click += CalculateButton_Click;
 
@@ -47,23 +42,42 @@ namespace kitty
 
             adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
             spinner.Adapter = adapter;
+            spinner.SetSelection(1);
         }
 
-        protected override void OnStop()
-        {
-            base.OnStop();
+        //protected override void OnStart()
+        //{
+        //    base.OnStart();
 
-            calculateButton.Click -= CalculateButton_Click;
+        //    calculateButton.Click += CalculateButton_Click;
 
-            madamAgeSeekBar.ProgressChanged -= MadamAgeSeekBar_ProgressChanged;
+        //    madamAgeSeekBar.ProgressChanged += MadamAgeSeekBar_ProgressChanged;
 
-            spinner.ItemSelected -= new EventHandler<AdapterView.ItemSelectedEventArgs>(Spinner_ItemSelected);
-            var adapter = ArrayAdapter.CreateFromResource(
-                    this, Resource.Array.color_hair, Android.Resource.Layout.SimpleSpinnerItem);
+        //    spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(Spinner_ItemSelected);
+        //    var adapter = ArrayAdapter.CreateFromResource(
+        //            this, Resource.Array.color_hair, Android.Resource.Layout.SimpleSpinnerItem);
 
-            adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
-            spinner.Adapter = adapter;
-        }
+        //    adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+        //    spinner.Adapter = adapter;
+        //    spinner.SetSelection(1);
+        //}
+
+        //protected override void OnStop()
+        //{
+        //    base.OnStop();
+
+        //    calculateButton.Click -= CalculateButton_Click;
+
+        //    madamAgeSeekBar.ProgressChanged -= MadamAgeSeekBar_ProgressChanged;
+
+        //    spinner.ItemSelected -= new EventHandler<AdapterView.ItemSelectedEventArgs>(Spinner_ItemSelected);
+        //    var adapter = ArrayAdapter.CreateFromResource(
+        //            this, Resource.Array.color_hair, Android.Resource.Layout.SimpleSpinnerItem);
+
+        //    adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+        //    spinner.Adapter = adapter;
+        //    spinner.SetSelection(1);
+        //}
 
         private void CalculateButton_Click(object sender, EventArgs e)
         {
@@ -79,11 +93,12 @@ namespace kitty
           
             if (married.Checked == true)
             {
-                numberCats.Text = " У мужа спроси ";
+                numberCats.Text = " Посоветуйся с мужем ";
                 imageCat.SetImageResource(Resource.Drawable.sample3);
 
             }
-                        
+               
+            
         }
 
         private void MadamAgeSeekBar_ProgressChanged(object sender, EventArgs e)
@@ -97,7 +112,27 @@ namespace kitty
 
             string toast = string.Format("Цвет волос {0}", spinner.GetItemAtPosition(e.Position));
             Toast.MakeText(this, toast, ToastLength.Short).Show();
+            
+            
+            if(spinner.SelectedItemPosition ==0)
+            {
+                imageCat.SetImageResource(Resource.Drawable.red);
+            }
 
+            if (spinner.SelectedItemPosition == 2)
+            {
+                imageCat.SetImageResource(Resource.Drawable.black);
+            }
+
+            if (spinner.SelectedItemPosition == 3)
+            {
+                imageCat.SetImageResource(Resource.Drawable.rus);
+            }
+
+            if (spinner.SelectedItemPosition == 1)
+            {
+                imageCat.SetImageResource(Resource.Drawable.sample2);
+            }
         }
 
     }
