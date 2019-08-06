@@ -3,5 +3,5 @@
 	<activity android:name=".kitty" android:configChanges="orientation|screenSize"></activity>
 	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
 	<uses-sdk android:targetSdkVersion="22" />
-	<application android:label="kitty"></application>
+	<application android:label="kitty" android:theme="@style/AppTheme" android:icon="@drawable/Icon"></application>
 </manifest>

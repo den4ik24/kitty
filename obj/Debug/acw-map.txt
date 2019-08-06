@@ -1,3 +1,0 @@
-kitty.MainActivity, kitty;md576abc7c04a0bc258ba3b39bfd03342af.MainActivity
-kitty.MainActivity;md576abc7c04a0bc258ba3b39bfd03342af.MainActivity
-kitty.MainActivity;md576abc7c04a0bc258ba3b39bfd03342af.MainActivity

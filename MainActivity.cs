@@ -2,12 +2,12 @@
 using Android.App;
 using Android.Widget;
 using Android.OS;
-
+using Android.Support.V7.App;
 
 namespace kitty
 {
-    [Activity(Label = "kitty", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity
+    [Activity(Label = "kitty", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true, Icon = "@drawable/icon")]
+    public class MainActivity : AppCompatActivity
     {
         Button calculateButton;
         TextView madamAge;
@@ -22,7 +22,7 @@ namespace kitty
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
-
+            
             madamAge = FindViewById<TextView>(Resource.Id.madamAge);
             numberCats = FindViewById<TextView>(Resource.Id.numberCats);
             calculateButton = FindViewById<Button>(Resource.Id.calculateButton);
@@ -89,6 +89,7 @@ namespace kitty
             if (married.Checked == false)
             {
                 imageCat.SetImageResource(Resource.Drawable.sample1);
+                
             }
           
             if (married.Checked == true)
